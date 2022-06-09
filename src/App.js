@@ -1,10 +1,35 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
+const GlobalStyle = createGlobalStyle`
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+`;
+
+const App = () => (
+  <>
+    <GlobalStyle />
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -16,8 +41,8 @@ function App() {
         </Routes>
       </header>
     </div>
-  );
-}
+  </>
+);
 
 function Home() {
   return (
