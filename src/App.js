@@ -5,6 +5,14 @@ import logo from './logo.svg';
 import './App.css';
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+    --body-color: #fff;
+
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+  }
+
   *,
   *::before,
   *::after {
@@ -13,6 +21,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
+
+    color: var(--body-color);
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
