@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FooterRoot = styled.footer`
-  border: 1px solid red;
-`;
+import Container from './Container';
+
+const FooterRoot = styled.footer``;
 
 const Footer = () => (
   <FooterRoot>
-    Footer
+    <Container>Footer</Container>
   </FooterRoot>
 );
 

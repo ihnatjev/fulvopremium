@@ -1,5 +1,11 @@
 import React from 'react';
 
-const About = () => <h2>About</h2>;
+import Container from '../components/Container';
+
+const About = () => (
+  <Container>
+    <h2>About</h2>
+  </Container>
+);
 
 export default About;
