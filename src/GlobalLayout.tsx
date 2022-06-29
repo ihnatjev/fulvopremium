@@ -7,11 +7,13 @@ import Footer from './components/Footer';
 
 const GlobalLayoutRoot = styled.div`
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
 `;
 
-const Main = styled.main``;
+const Main = styled.main`
+  flex-grow: 1;
+`;
 
 const GlobalLayout = () => (
   <GlobalLayoutRoot>
