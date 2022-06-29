@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 const GlobalLayoutRoot = styled.div`
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 `;

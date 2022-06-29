@@ -28,6 +28,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
   html {
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: transparent;

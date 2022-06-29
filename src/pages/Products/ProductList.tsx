@@ -8,8 +8,8 @@ import { ProductModel } from './models/ProductModel';
 
 const ProductList = () => {
   const products: Array<ProductModel> = [
-    { id: '1' },
-    { id: '2' }
+    { id: '1', name: 'Fulvo 1' },
+    { id: '2', name: 'Fulvo 2' }
   ];
 
   const isLoading = false;
@@ -26,7 +26,7 @@ const ProductList = () => {
         {products.map(product => (
           <li key={product.id}>
             <Link to={product.id}>
-              {product.id}
+              {product.name}
             </Link>
           </li>
         ))}
