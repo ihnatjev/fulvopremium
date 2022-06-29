@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import SEO from '../../components/SEO';
 import Loader from '../../components/Loader';
+import StyledLink from '../../components/Link';
 
 import { ProductModel } from './models/ProductModel';
+
 
 const ProductList = () => {
   const products: Array<ProductModel> = [
@@ -25,9 +26,9 @@ const ProductList = () => {
       <ul>
         {products.map(product => (
           <li key={product.id}>
-            <Link to={product.id}>
+            <StyledLink to={product.id}>
               {product.name}
-            </Link>
+            </StyledLink>
           </li>
         ))}
       </ul>

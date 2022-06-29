@@ -1,7 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledLoader = styled.div``;
 
 const Loader = () => (
-  <h4>Loading...</h4>
+  <StyledLoader>Loading...</StyledLoader>
 );
 
 export default Loader;

@@ -1,20 +1,11 @@
-import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
-const ContainerRoot = styled.div`
-  max-width: 1280px;
+const StyledContainer = styled.div`
+  max-width: var(--container-max-width);
   position: relative;
 
   margin-left: auto;
   margin-right: auto;
 `;
 
-type ContainerProps = {
-  children?: ReactNode
-}
-
-const Container = ({ children }: ContainerProps) => (
-  <ContainerRoot>{children}</ContainerRoot>
-);
-
-export default Container;
+export default StyledContainer;

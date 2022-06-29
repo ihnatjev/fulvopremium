@@ -1,15 +1,15 @@
 import React from 'react';
 
 import SEO from '../components/SEO';
-import Container from '../components/Container';
+import StyledContainer from '../components/Container';
 
 const Contact = () => (
   <>
     <SEO title="Contact" />
 
-    <Container>
-      <h2>Contact</h2>
-    </Container>
+    <StyledContainer>
+      <h2>Контакти</h2>
+    </StyledContainer>
   </>
 );
 

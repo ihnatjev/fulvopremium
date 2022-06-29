@@ -1,15 +1,15 @@
 import React from 'react';
 
 import SEO from '../components/SEO';
-import Container from '../components/Container';
+import StyledContainer from '../components/Container';
 
 const Credit = () => (
   <>
     <SEO title="Credit" />
 
-    <Container>
-      <h2>Credit</h2>
-    </Container>
+    <StyledContainer>
+      <h2>Кредит</h2>
+    </StyledContainer>
   </>
 );
 

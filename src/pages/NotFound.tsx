@@ -1,17 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import SEO from '../components/SEO';
-import Container from '../components/Container';
+import StyledContainer from '../components/Container';
+import StyledText from '../components/Text';
+import StyledLink from '../components/Link';
 
 const NotFound = () => (
   <>
     <SEO title="Not Found" />
 
-    <Container>
-      <h2>Not Found</h2>
-      <p>Return to <Link to="/">Homepage</Link></p>
-    </Container>
+    <StyledContainer>
+      <h2>Сторінка відсутня</h2>
+      <StyledText>
+        Повернутися <StyledLink to="/">на головну</StyledLink>
+      </StyledText>
+    </StyledContainer>
   </>
 );
 

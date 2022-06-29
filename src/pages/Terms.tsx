@@ -1,15 +1,15 @@
 import React from 'react';
 
 import SEO from '../components/SEO';
-import Container from '../components/Container';
+import StyledContainer from '../components/Container';
 
 const Terms = () => (
   <>
     <SEO title="Terms" />
 
-    <Container>
-      <h2>Terms</h2>
-    </Container>
+    <StyledContainer>
+      <h2>Умови</h2>
+    </StyledContainer>
   </>
 );
 

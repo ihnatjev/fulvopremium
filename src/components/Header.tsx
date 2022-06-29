@@ -1,13 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Container from './Container';
+import StyledContainer from './Container';
+import StyledLink from './Link';
+import StyledImage from './Image';
+
 import brand from '../assets/images/brand.svg';
 
-const HeaderRoot = styled.header``;
 
-const Nav = styled.nav`
+const StyledHeader = styled.header``;
+
+const StyledNav = styled.nav`
   display: flex;
 
   a {
@@ -15,32 +18,32 @@ const Nav = styled.nav`
   }
 `;
 
-const BrandLink = styled(Link)`
+const StyledBrandLink = styled(StyledLink)`
   display: inline-flex;
   text-decoration: none;
 `;
 
-const BrandImage = styled.img`
+const StyledBrandImage = styled(StyledImage)`
   height: 48px;
 `;
 
 const Header = () => (
-  <HeaderRoot>
-    <Container>
+  <StyledHeader>
+    <StyledContainer>
 
-      <BrandLink to="/">
-        <BrandImage src={brand} />
-      </BrandLink>
+      <StyledBrandLink to="/">
+        <StyledBrandImage src={brand} />
+      </StyledBrandLink>
 
-      <Nav>
-        <Link to="/">Головна</Link>
-        <Link to="/products">Продукти</Link>
-        <Link to="/about">Про нас</Link>
-        <Link to="/contact">Контакти</Link>
-      </Nav>
+      <StyledNav>
+        <StyledLink to="/">Головна</StyledLink>
+        <StyledLink to="/products">Продукти</StyledLink>
+        <StyledLink to="/about">Про нас</StyledLink>
+        <StyledLink to="/contact">Контакти</StyledLink>
+      </StyledNav>
 
-    </Container>
-  </HeaderRoot>
+    </StyledContainer>
+  </StyledHeader>
 );
 
 export default Header;

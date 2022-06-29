@@ -5,26 +5,26 @@ import styled from 'styled-components';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-const GlobalLayoutRoot = styled.div`
+const StyledLayoutRoot = styled.div`
   min-height: 100%;
   display: flex;
   flex-direction: column;
 `;
 
-const Main = styled.main`
+const StyledMain = styled.main`
   flex-grow: 1;
 `;
 
 const GlobalLayout = () => (
-  <GlobalLayoutRoot>
+  <StyledLayoutRoot>
     <Header />
 
-    <Main>
+    <StyledMain>
       <Outlet />
-    </Main>
+    </StyledMain>
 
     <Footer />
-  </GlobalLayoutRoot>
+  </StyledLayoutRoot>
 );
 
 export default GlobalLayout;
