@@ -8,7 +8,7 @@ const Home = () => (
     <SEO title="Home" />
 
     <Container>
-      <h2>Home</h2>
+      <h2>Головна</h2>
     </Container>
   </>
 );

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Container from './Container';
-import brand from '../assets/brand.svg';
+import brand from '../assets/images/brand.svg';
 
 const HeaderRoot = styled.header``;
 

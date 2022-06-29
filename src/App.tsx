@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
+import GlobalFont from './GlobalFont';
 import GlobalStyle from './GlobalStyle';
 import GlobalLayout from './GlobalLayout';
 
@@ -16,6 +17,7 @@ import NotFound from './pages/NotFound';
 
 const App = () => (
   <>
+    <GlobalFont />
     <GlobalStyle />
 
     <Routes>

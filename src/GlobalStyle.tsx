@@ -2,9 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --body-font-family: 'Montserrat Medium', sans-serif;
     --body-font-size: 1rem;
-    --body-font-weight: 400;
+    --body-font-weight: 500;
     --body-text-align: left;
     --body-line-height: 1.5;
     --body-color: rgba(49, 62, 87, 1);
@@ -14,7 +14,8 @@ const GlobalStyle = createGlobalStyle`
     --link-decoration: underline;
     --link-hover-decoration: none;
 
-    --heading-font-weight: 500;
+    --heading-font-family: 'Mariupol Bold', sans-serif;
+    --heading-font-weight: 700;
     --heading-line-height: 1.25;
 
     @media (prefers-reduced-motion: no-preference) {
@@ -63,6 +64,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     line-height: var(--heading-line-height);
 
