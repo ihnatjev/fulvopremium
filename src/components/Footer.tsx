@@ -18,10 +18,10 @@ const Footer = () => (
   <FooterRoot>
     <Container>
       <Nav>
-        <Link to="/partners">Partners</Link>
-        <Link to="/credit">Credit</Link>
-        <Link to="/privacy">Privacy</Link>
-        <Link to="/terms">Terms</Link>
+        <Link to="/partners">Партнери</Link>
+        <Link to="/credit">Кредит</Link>
+        <Link to="/privacy">Конфіденційність</Link>
+        <Link to="/terms">Умови</Link>
       </Nav>
     </Container>
   </FooterRoot>

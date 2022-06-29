@@ -33,10 +33,10 @@ const Header = () => (
       </BrandLink>
 
       <Nav>
-        <Link to="/">Home</Link>
-        <Link to="/products">Products</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/">Головна</Link>
+        <Link to="/products">Продукти</Link>
+        <Link to="/about">Про нас</Link>
+        <Link to="/contact">Контакти</Link>
       </Nav>
 
     </Container>
