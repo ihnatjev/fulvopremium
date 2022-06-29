@@ -2,23 +2,42 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import GlobalStyle from './GlobalStyle';
-import Layout from './Layout';
+import GlobalLayout from './GlobalLayout';
 
 import Home from './pages/Home';
+import Products from './pages/Products';
 import About from './pages/About';
+import Partners from './pages/Partners';
+import Credit from './pages/Credit';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 import NotFound from './pages/NotFound';
 
 const App = () => (
   <>
     <GlobalStyle />
 
-    <Layout>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+    <Routes>
+      <Route path="/" element={<GlobalLayout /> }>
+
+        <Route index element={<Home />} />
+
+        <Route path="products/*" element={<Products />} />
+
+        <Route path="about" element={<About /> } />
+
+        <Route path="partners" element={<Partners /> } />
+
+        <Route path="credit" element={<Credit /> } />
+
+        <Route path="privacy" element={<Privacy /> } />
+
+        <Route path="terms" element={<Terms />} />
+
         <Route path='*' element={<NotFound />} />
-      </Routes>
-    </Layout>
+
+      </Route>
+    </Routes>
   </>
 );
 
