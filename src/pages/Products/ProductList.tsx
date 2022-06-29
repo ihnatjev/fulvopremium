@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import SEO from '../../components/SEO';
 import Loader from '../../components/Loader';
+
 import { ProductModel } from './models/ProductModel';
 
 const ProductList = () => {
@@ -17,15 +19,19 @@ const ProductList = () => {
   }
 
   return (
-    <ul>
-      {products.map(product => (
-        <li key={product.id}>
-          <Link to={product.id}>
-            {product.id}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <>
+      <SEO title="Products" />
+
+      <ul>
+        {products.map(product => (
+          <li key={product.id}>
+            <Link to={product.id}>
+              {product.id}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
 

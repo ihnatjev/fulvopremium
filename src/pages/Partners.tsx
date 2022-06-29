@@ -1,11 +1,16 @@
 import React from 'react';
 
+import SEO from '../components/SEO';
 import Container from '../components/Container';
 
 const Partners = () => (
-  <Container>
-    <h2>Partners</h2>
-  </Container>
+  <>
+    <SEO title="Partners" />
+
+    <Container>
+      <h2>Partners</h2>
+    </Container>
+  </>
 );
 
 export default Partners;

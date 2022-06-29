@@ -8,14 +8,14 @@ import ProductItem from './ProductItem';
 
 const Products = () => (
   <Container>
-    <h2>Products</h2>
+      <h2>Products</h2>
 
-    <Routes>
-      <Route index element={<ProductList />} />
-      <Route path=":productId" element={<ProductItem />} />
-    </Routes>
+      <Routes>
+        <Route index element={<ProductList />} />
+        <Route path=":productId" element={<ProductItem />} />
+      </Routes>
 
-  </Container>
+    </Container>
 );
 
 export default Products;
