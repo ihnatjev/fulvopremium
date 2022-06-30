@@ -2,13 +2,14 @@ import React from 'react';
 
 import SEO from '../components/SEO';
 import StyledContainer from '../components/Container';
+import StyledHeading2 from '../components/Heading2';
 
 const About = () => (
   <>
     <SEO title="About" />
 
     <StyledContainer>
-      <h2>Про нас</h2>
+      <StyledHeading2>Про нас</StyledHeading2>
     </StyledContainer>
   </>
 );

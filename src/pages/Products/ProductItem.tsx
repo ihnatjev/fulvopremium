@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import SEO from '../../components/SEO';
+import StyledHeading4 from '../../components/Heading4';
 
 const ProductItem = () => {
   const { productId } = useParams();
@@ -10,7 +11,7 @@ const ProductItem = () => {
     <>
       <SEO title={productId} />
 
-      <h3>Product ID: {productId}</h3>
+      <StyledHeading4>Product ID: {productId}</StyledHeading4>
     </>
   );
 };

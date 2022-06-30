@@ -2,13 +2,14 @@ import React from 'react';
 
 import SEO from '../components/SEO';
 import StyledContainer from '../components/Container';
+import StyledHeading2 from '../components/Heading2';
 
 const Credit = () => (
   <>
     <SEO title="Credit" />
 
     <StyledContainer>
-      <h2>Кредит</h2>
+      <StyledHeading2>Кредит</StyledHeading2>
     </StyledContainer>
   </>
 );

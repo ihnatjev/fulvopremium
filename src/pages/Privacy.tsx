@@ -2,13 +2,14 @@ import React from 'react';
 
 import SEO from '../components/SEO';
 import StyledContainer from '../components/Container';
+import StyledHeading2 from '../components/Heading2';
 
 const Privacy = () => (
   <>
     <SEO title="Privacy" />
 
     <StyledContainer>
-      <h2>Конфіденційність</h2>
+      <StyledHeading2>Конфіденційність</StyledHeading2>
     </StyledContainer>
   </>
 );
