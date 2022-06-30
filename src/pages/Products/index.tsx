@@ -6,7 +6,6 @@ import StyledHeading2 from '../../components/Heading2';
 import ProductList from './ProductList';
 import ProductItem from './ProductItem';
 
-
 const Products = () => (
   <StyledContainer>
     <StyledHeading2>Продукти</StyledHeading2>
