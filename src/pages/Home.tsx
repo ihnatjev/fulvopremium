@@ -1,4 +1,4 @@
-import SEO from '../components/SEO';
+import SEO from 'components/SEO';
 import StyledContainer from '../components/Container';
 import StyledHeading2 from '../components/Heading2';
 

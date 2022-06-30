@@ -4,8 +4,7 @@ import StyledContainer from './Container';
 import StyledLink from './Link';
 import StyledImage from './Image';
 
-import brand from '../assets/images/brand.svg';
-
+import brand from 'assets/images/brand.svg';
 
 const StyledHeader = styled.header``;
 

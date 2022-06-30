@@ -1,8 +1,8 @@
-import SEO from '../components/SEO';
-import StyledContainer from '../components/Container';
-import StyledHeading2 from '../components/Heading2';
-import StyledText from '../components/Text';
-import StyledLink from '../components/Link';
+import SEO from 'components/SEO';
+import StyledContainer from 'components/Container';
+import StyledHeading2 from 'components/Heading2';
+import StyledText from 'components/Text';
+import StyledLink from 'components/Link';
 
 const NotFound = () => (
   <>

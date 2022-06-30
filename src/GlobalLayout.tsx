@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import styled from '@emotion/styled';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
 
 const StyledLayoutRoot = styled.div`
   min-height: 100%;

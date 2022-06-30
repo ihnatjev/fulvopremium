@@ -1,9 +1,8 @@
-import SEO from '../../components/SEO';
-import Loader from '../../components/Loader';
-import StyledLink from '../../components/Link';
+import SEO from 'components/SEO';
+import Loader from 'components/Loader';
+import StyledLink from 'components/Link';
 
 import { ProductModel } from './models/ProductModel';
-
 
 const ProductList = () => {
   const products: Array<ProductModel> = [

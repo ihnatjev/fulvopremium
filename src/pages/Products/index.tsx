@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
-import StyledContainer from '../../components/Container';
-import StyledHeading2 from '../../components/Heading2';
+import StyledContainer from 'components/Container';
+import StyledHeading2 from 'components/Heading2';
 
 import ProductList from './ProductList';
 import ProductItem from './ProductItem';

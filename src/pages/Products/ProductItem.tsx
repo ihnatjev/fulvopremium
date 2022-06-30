@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 
-import SEO from '../../components/SEO';
-import StyledHeading4 from '../../components/Heading4';
+import SEO from 'components/SEO';
+import StyledHeading4 from 'components/Heading4';
 
 const ProductItem = () => {
   const { productId } = useParams();
