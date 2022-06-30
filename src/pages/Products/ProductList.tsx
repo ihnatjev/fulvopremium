@@ -1,5 +1,3 @@
-import React from 'react';
-
 import SEO from '../../components/SEO';
 import Loader from '../../components/Loader';
 import StyledLink from '../../components/Link';
