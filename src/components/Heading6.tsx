@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const StyledHeading6= styled.h6`
   font-size: 0.875rem;

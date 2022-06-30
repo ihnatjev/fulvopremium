@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const StyledHeading2= styled.h2`
   font-size: 2rem;
