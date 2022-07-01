@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.8c08e5dd.js",
+    "main.js": "/static/js/main.ad042907.js",
     "static/media/sunflower.png": "/static/media/sunflower.92019b1276d2fe9dab93.png",
     "static/media/corn.png": "/static/media/corn.798a45ef3f22bb498c89.png",
     "static/media/rapeseed.png": "/static/media/rapeseed.49ae7fa015a92adb04d9.png",
@@ -8,6 +8,7 @@
     "static/media/wheat.png": "/static/media/wheat.656c492e44050d3daaba.png",
     "static/media/benefits-bg.jpg": "/static/media/benefits-bg.b3e4469a1a299795a503.jpg",
     "static/media/hero-bg.jpg": "/static/media/hero-bg.53ab15cbb74ed6e3a574.jpg",
+    "static/media/about-bg.png": "/static/media/about-bg.e19989338a5c5007621b.png",
     "static/media/montserrat-medium.woff2": "/static/media/montserrat-medium.d6bbb7c3c86aa8edcd0a.woff2",
     "static/media/mariupol-bold.woff2": "/static/media/mariupol-bold.aa144ceef0fb8cf3f3e5.woff2",
     "static/media/brand.svg": "/static/media/brand.b6a56a58cd6e4916bf55269cb22919ca.svg",
@@ -25,9 +26,9 @@
     "index.html": "/index.html",
     "static/media/benefits-list-marker.svg": "/static/media/benefits-list-marker.67a1f6c32ce9bfa0113a6e3c2dbb55a6.svg",
     "static/media/ua-flag.svg": "/static/media/ua-flag.8cec61752c99c731b60778bd6ce079f2.svg",
-    "main.8c08e5dd.js.map": "/static/js/main.8c08e5dd.js.map"
+    "main.ad042907.js.map": "/static/js/main.ad042907.js.map"
   },
   "entrypoints": [
-    "static/js/main.8c08e5dd.js"
+    "static/js/main.ad042907.js"
   ]
 }
