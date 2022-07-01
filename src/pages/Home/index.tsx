@@ -7,6 +7,8 @@ import heroBackground from './images/hero-bg.jpg';
 import benefitsBackground from './images/benefits-bg.jpg';
 import benefitsListMarker from './images/benefits-list-marker.svg'
 
+import aboutBackground from './images/about-bg.png';
+
 import fulvoSunflower from './images/fulvo/sunflower.png';
 import fulvoRapeseed from './images/fulvo/rapeseed.png';
 import fulvoWheat from './images/fulvo/wheat.png';
@@ -91,6 +93,29 @@ const BenefitListItem = styled.li`
   padding-left: 104px;
   margin-top: 24px;
   margin-bottom: 24px;
+`;
+
+/* Effectiveness */
+const Effectiveness = styled.section``;
+
+/* Characteristics */
+const Characteristics = styled.section``;
+
+/* About */
+const About = styled.section`
+  background: url(${aboutBackground}) no-repeat center bottom;
+
+  padding-top: 96px;
+  padding-bottom: 208px;
+`;
+
+const AboutText = styled.div`
+  font-size: 1.25rem;
+
+  strong {
+    font-size: 1.5rem;
+    font-family: var(--heading-font-family);
+  }
 `;
 
 const Home = () => (
@@ -215,6 +240,21 @@ const Home = () => (
 
       </Container>
     </SecondaryBenefits>
+
+    <Effectiveness></Effectiveness>
+
+    <Characteristics></Characteristics>
+
+    <About>
+      <Container>
+
+        <AboutText>
+          <strong>Фульво Преміум</strong> - новітній екологічно-чистий гуміновий препарат отриманий методом екстракції бурого вугілля та являє собою комплекс біополімерів нерегулярної будови на основі солей гумінових та фульвових кислот отриманих за спеціальною технологією.
+          До складу продукту також входять, макро і мікроелементи у хелатній формі та біологічно-активні речовини, що модулюють роботу  силових станцій клітини-мітохондрій безпосередно посилюючи активність роботи ферменту АТФ синтеза, що збільшує кількість утворення молекул АТФ.
+        </AboutText>
+
+      </Container>
+    </About>
 
     <Container>
       <div>
