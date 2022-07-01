@@ -6,6 +6,12 @@ import StyledHeading2 from 'components/Heading2';
 
 import heroBackground from './images/hero-bg.jpg';
 
+import fulvoSunflower from './images/fulvo/sunflower.png';
+import fulvoRapeseed from './images/fulvo/rapeseed.png';
+import fulvoWheat from './images/fulvo/wheat.png';
+import fulvoSoy from './images/fulvo/soy.png';
+import fulvoCorn from './images/fulvo/corn.png';
+
 import { ReactComponent as ResistanceIcon } from './images/icons/resistance.svg'
 import { ReactComponent as YieldIcon } from './images/icons/yield.svg'
 import { ReactComponent as GerminationIcon } from './images/icons/germination.svg'
@@ -51,6 +57,12 @@ const Home = () => (
         <VodafoneIcon />
         <KyivstarIcon />
         <UaFlagIcon />
+
+        <img src={fulvoSunflower} alt="" />
+        <img src={fulvoRapeseed} alt="" />
+        <img src={fulvoWheat} alt="" />
+        <img src={fulvoSoy} alt="" />
+        <img src={fulvoCorn} alt="" />
     </StyledContainer>
   </>
 );
