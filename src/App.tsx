@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import GlobalFont from 'GlobalFont';
 import GlobalStyle from 'GlobalStyle';
@@ -13,6 +14,10 @@ import Credit from 'pages/Credit';
 import Privacy from 'pages/Privacy';
 import Terms from 'pages/Terms';
 import NotFound from 'pages/NotFound';
+
+// Initialize Google Analytics
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => (
   <>
