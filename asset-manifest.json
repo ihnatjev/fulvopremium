@@ -1,14 +1,26 @@
 {
   "files": {
-    "main.js": "/static/js/main.a3c302e4.js",
-    "static/media/bg.jpg": "/static/media/bg.53ab15cbb74ed6e3a574.jpg",
+    "main.js": "/static/js/main.64e92bf3.js",
+    "static/media/hero-bg.jpg": "/static/media/hero-bg.53ab15cbb74ed6e3a574.jpg",
     "static/media/montserrat-medium.woff2": "/static/media/montserrat-medium.d6bbb7c3c86aa8edcd0a.woff2",
     "static/media/mariupol-bold.woff2": "/static/media/mariupol-bold.aa144ceef0fb8cf3f3e5.woff2",
     "static/media/brand.svg": "/static/media/brand.b6a56a58cd6e4916bf55269cb22919ca.svg",
+    "static/media/root-system.svg": "/static/media/root-system.43da524381618a1e28cc80ac374ff236.svg",
+    "static/media/resistance.svg": "/static/media/resistance.c4abee8049d165a8170f16672609ca45.svg",
+    "static/media/germination.svg": "/static/media/germination.ddca72f213fa41d96642b0842e26acad.svg",
+    "static/media/yield.svg": "/static/media/yield.f05ad50b02aba922e6f20f72d077a9e1.svg",
+    "static/media/kyivstar.svg": "/static/media/kyivstar.06cedda1f22ba76cdfbfb86bd3196cc9.svg",
+    "static/media/delivery.svg": "/static/media/delivery.5dbdf198a611b8b6b988c92e45b72628.svg",
+    "static/media/absorption.svg": "/static/media/absorption.0d42f188ce0a225b78145d10b487f620.svg",
+    "static/media/certificate.svg": "/static/media/certificate.d79d10fc5521aded277e365af744ce4b.svg",
+    "static/media/immunity.svg": "/static/media/immunity.7aa0ced2c7e3b4e92a1167afa446e0ac.svg",
+    "static/media/vodafone.svg": "/static/media/vodafone.05ed8edadb69076e64a3bf4eca8001eb.svg",
+    "static/media/box.svg": "/static/media/box.98047099a18ee22a01b35a1f6e1d68b2.svg",
     "index.html": "/index.html",
-    "main.a3c302e4.js.map": "/static/js/main.a3c302e4.js.map"
+    "static/media/ua-flag.svg": "/static/media/ua-flag.8cec61752c99c731b60778bd6ce079f2.svg",
+    "main.64e92bf3.js.map": "/static/js/main.64e92bf3.js.map"
   },
   "entrypoints": [
-    "static/js/main.a3c302e4.js"
+    "static/js/main.64e92bf3.js"
   ]
 }
