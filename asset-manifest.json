@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.ad042907.js",
+    "main.js": "/static/js/main.97b4b3e0.js",
     "static/media/sunflower.png": "/static/media/sunflower.92019b1276d2fe9dab93.png",
     "static/media/corn.png": "/static/media/corn.798a45ef3f22bb498c89.png",
     "static/media/rapeseed.png": "/static/media/rapeseed.49ae7fa015a92adb04d9.png",
@@ -26,9 +26,9 @@
     "index.html": "/index.html",
     "static/media/benefits-list-marker.svg": "/static/media/benefits-list-marker.67a1f6c32ce9bfa0113a6e3c2dbb55a6.svg",
     "static/media/ua-flag.svg": "/static/media/ua-flag.8cec61752c99c731b60778bd6ce079f2.svg",
-    "main.ad042907.js.map": "/static/js/main.ad042907.js.map"
+    "main.97b4b3e0.js.map": "/static/js/main.97b4b3e0.js.map"
   },
   "entrypoints": [
-    "static/js/main.ad042907.js"
+    "static/js/main.97b4b3e0.js"
   ]
 }
