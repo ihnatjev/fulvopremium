@@ -1,13 +1,13 @@
+import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
-import StyledContainer from 'components/Container';
-import StyledLink from 'components/Link';
+import Container from 'components/Container';
 
 import { ReactComponent as Brand } from './brand.svg';
 
-const StyledHeader = styled.header``;
+const HeaderRoot = styled.header``;
 
-const StyledNav = styled.nav`
+const Nav = styled.nav`
   display: flex;
 
   a {
@@ -15,32 +15,32 @@ const StyledNav = styled.nav`
   }
 `;
 
-const StyledBrandLink = styled(StyledLink)`
+const BrandLink = styled(Link)`
   display: inline-flex;
   text-decoration: none;
 `;
 
-const StyledBrandImage = styled(Brand)`
+const BrandImage = styled(Brand)`
   height: 48px;
 `;
 
 const Header = () => (
-  <StyledHeader>
-    <StyledContainer>
+  <HeaderRoot>
+    <Container>
 
-      <StyledBrandLink to="/">
-        <StyledBrandImage />
-      </StyledBrandLink>
+      <BrandLink to="/">
+        <BrandImage />
+      </BrandLink>
 
-      <StyledNav>
-        <StyledLink to="/">Головна</StyledLink>
-        <StyledLink to="/products">Продукти</StyledLink>
-        <StyledLink to="/about">Про нас</StyledLink>
-        <StyledLink to="/contact">Контакти</StyledLink>
-      </StyledNav>
+      <Nav>
+        <Link to="/">Головна</Link>
+        <Link to="/products">Продукти</Link>
+        <Link to="/about">Про нас</Link>
+        <Link to="/contact">Контакти</Link>
+      </Nav>
 
-    </StyledContainer>
-  </StyledHeader>
+    </Container>
+  </HeaderRoot>
 );
 
 export default Header;

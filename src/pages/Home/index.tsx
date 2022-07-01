@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 import SEO from 'components/SEO';
-import StyledContainer from 'components/Container';
+import Container from 'components/Container';
 
 import heroBackground from './images/hero-bg.jpg';
 import benefitsBackground from './images/benefits-bg.jpg';
@@ -36,6 +36,14 @@ const Hero = styled.section`
 
   height: 90vh;
   min-height: 480px;
+`;
+
+const HeroIntro = styled.h1`
+  line-height: 1.15;
+`;
+
+const HeroSlogan = styled.div`
+  font-size: 1.5rem;
 `;
 
 /* Primary Benefits */
@@ -90,13 +98,18 @@ const Home = () => (
     <SEO title="Home" />
 
     <Hero>
-      <StyledContainer>
-        Hero
-      </StyledContainer>
+      <Container>
+        <HeroIntro>
+          Забезпечує стабільну прибавку врожаю до 20% за будь-яких погодних умов!
+        </HeroIntro>
+        <HeroSlogan>
+          Fulvo Premium - Новинка серед добрив, яка не має аналогів.
+        </HeroSlogan>
+      </Container>
     </Hero>
 
     <PrimaryBenefits>
-      <StyledContainer>
+      <Container>
 
         <BenefitItem>
           <BenefitIcon>
@@ -152,11 +165,11 @@ const Home = () => (
           </BenefitIconText>
         </BenefitItem>
 
-      </StyledContainer>
+      </Container>
     </PrimaryBenefits>
 
     <SecondaryBenefits>
-      <StyledContainer>
+      <Container>
 
         <BenefitList>
           <BenefitListItem>
@@ -200,10 +213,10 @@ const Home = () => (
           </BenefitListItem>
         </BenefitList>
 
-      </StyledContainer>
+      </Container>
     </SecondaryBenefits>
 
-    <StyledContainer>
+    <Container>
       <div>
         <CertificateIcon />
         <DeliveryIcon />
@@ -232,7 +245,7 @@ const Home = () => (
       <div>
         <img src={fulvoCorn} alt="Фульво Преміум Кукурудза" />
       </div>
-    </StyledContainer>
+    </Container>
   </>
 );
 

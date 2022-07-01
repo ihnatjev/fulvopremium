@@ -1,11 +1,11 @@
+import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
-import StyledContainer from './Container';
-import StyledLink from './Link';
+import Container from './Container';
 
-const StyledFooter = styled.footer``;
+const FooterRoot = styled.footer``;
 
-const StyledNav = styled.nav`
+const Nav = styled.nav`
   display: flex;
 
   a {
@@ -14,16 +14,18 @@ const StyledNav = styled.nav`
 `;
 
 const Footer = () => (
-  <StyledFooter>
-    <StyledContainer>
-      <StyledNav>
-        <StyledLink to="/partners">Партнери</StyledLink>
-        <StyledLink to="/credit">Кредит</StyledLink>
-        <StyledLink to="/privacy">Конфіденційність</StyledLink>
-        <StyledLink to="/terms">Умови</StyledLink>
-      </StyledNav>
-    </StyledContainer>
-  </StyledFooter>
+  <FooterRoot>
+    <Container>
+
+      <Nav>
+        <Link to="/partners">Партнери</Link>
+        <Link to="/credit">Кредит</Link>
+        <Link to="/privacy">Конфіденційність</Link>
+        <Link to="/terms">Умови</Link>
+      </Nav>
+
+    </Container>
+  </FooterRoot>
 );
 
 export default Footer;

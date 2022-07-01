@@ -1,21 +1,20 @@
 import { Routes, Route } from 'react-router-dom';
 
-import StyledContainer from 'components/Container';
-import StyledHeading2 from 'components/Heading2';
+import Container from 'components/Container';
 
 import ProductList from './ProductList';
 import ProductItem from './ProductItem';
 
 const Products = () => (
-  <StyledContainer>
-    <StyledHeading2>Продукти</StyledHeading2>
+  <Container>
+    <h2>Продукти</h2>
 
     <Routes>
       <Route index element={<ProductList />} />
       <Route path=":productId" element={<ProductItem />} />
     </Routes>
 
-  </StyledContainer>
+  </Container>
 );
 
 export default Products;

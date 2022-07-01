@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-const StyledLoader = styled.div``;
+const LoaderRoot = styled.div``;
 
 const Loader = () => (
-  <StyledLoader>Loading...</StyledLoader>
+  <LoaderRoot>Loading...</LoaderRoot>
 );
 
 export default Loader;

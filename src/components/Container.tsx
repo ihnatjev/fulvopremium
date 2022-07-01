@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-const StyledContainer = styled.div`
+const Container = styled.div`
   width: 100%;
   max-width: var(--container-max-width);
   position: relative;
@@ -12,4 +12,4 @@ const StyledContainer = styled.div`
   margin-right: auto;
 `;
 
-export default StyledContainer;
+export default Container;
