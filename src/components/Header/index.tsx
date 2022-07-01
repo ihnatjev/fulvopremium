@@ -2,9 +2,8 @@ import styled from '@emotion/styled';
 
 import StyledContainer from 'components/Container';
 import StyledLink from 'components/Link';
-import StyledImage from 'components/Image';
 
-import brand from './brand.svg';
+import { ReactComponent as Brand } from './brand.svg';
 
 const StyledHeader = styled.header``;
 
@@ -21,7 +20,7 @@ const StyledBrandLink = styled(StyledLink)`
   text-decoration: none;
 `;
 
-const StyledBrandImage = styled(StyledImage)`
+const StyledBrandImage = styled(Brand)`
   height: 48px;
 `;
 
@@ -30,7 +29,7 @@ const Header = () => (
     <StyledContainer>
 
       <StyledBrandLink to="/">
-        <StyledBrandImage src={brand} />
+        <StyledBrandImage />
       </StyledBrandLink>
 
       <StyledNav>
