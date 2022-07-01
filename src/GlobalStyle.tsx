@@ -74,6 +74,11 @@ const GlobalStyle = () => (
       color: var(--body-color);
       background-color: var(--body-bg-color);
     }
+
+    img,
+    svg {
+      vertical-align: middle;
+    }
   `} />
 );
 

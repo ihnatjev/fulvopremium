@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 import SEO from 'components/SEO';
 import StyledContainer from 'components/Container';
-import StyledHeading3 from 'components/Heading3';
 
 import heroBackground from './images/hero-bg.jpg';
 import benefitsBackground from './images/benefits-bg.jpg';
@@ -27,6 +26,7 @@ import { ReactComponent as VodafoneIcon } from './images/icons/vodafone.svg'
 import { ReactComponent as KyivstarIcon } from './images/icons/kyivstar.svg'
 import { ReactComponent as UaFlagIcon } from './images/icons/ua-flag.svg'
 
+/* Hero */
 const Hero = styled.section`
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 70%),
@@ -38,13 +38,34 @@ const Hero = styled.section`
   min-height: 480px;
 `;
 
+/* Primary Benefits */
 const PrimaryBenefits = styled.section`
   background: url(${benefitsBackground}) no-repeat right top;
-  background-size: contains;
+  background-size: contain;
 
   min-height: 800px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 `;
 
+const BenefitItem = styled.div`
+  display: flex;
+  align-items: center;
+
+  margin-top: 48px;
+  margin-bottom: 48px;
+`;
+
+const BenefitIcon = styled.div`
+  margin-right: 32px;
+`;
+
+const BenefitIconText = styled.span`
+  font-size: 1.5rem;
+  font-family: var(--heading-font-family);
+`;
+
+/* Secondary Benefits */
 const SecondaryBenefits = styled.section``;
 
 const BenefitList = styled.ul`
@@ -56,6 +77,7 @@ const BenefitList = styled.ul`
 const BenefitListItem = styled.li`
   background: url(${benefitsListMarker}) no-repeat left 10px;
 
+  font-size: 1rem;
   font-family: var(--heading-font-family);
 
   padding-left: 104px;
@@ -75,47 +97,61 @@ const Home = () => (
 
     <PrimaryBenefits>
       <StyledContainer>
-        <div>
-          <ResistanceIcon />
-          <StyledHeading3>
+
+        <BenefitItem>
+          <BenefitIcon>
+            <ResistanceIcon />
+          </BenefitIcon>
+          <BenefitIconText>
             Покращує морозостійкість і посухостійкість
-          </StyledHeading3>
-        </div>
+          </BenefitIconText>
+        </BenefitItem>
 
-        <div>
-          <YieldIcon />
-          <StyledHeading3>
+        <BenefitItem>
+          <BenefitIcon>
+            <YieldIcon />
+          </BenefitIcon>
+          <BenefitIconText>
             Збільшує врожайність і покращує якість
-          </StyledHeading3>
-        </div>
+          </BenefitIconText>
+        </BenefitItem>
 
-        <div>
-          <GerminationIcon />
-          <StyledHeading3>
+        <BenefitItem>
+          <BenefitIcon>
+            <GerminationIcon />
+          </BenefitIcon>
+          <BenefitIconText>
             Збільшує енергію проростання та схожість насіння
-          </StyledHeading3>
-        </div>
+          </BenefitIconText>
+        </BenefitItem>
 
-        <div>
-          <ImmunityIcon />
-          <StyledHeading3>
+        <BenefitItem>
+          <BenefitIcon>
+            <ImmunityIcon />
+          </BenefitIcon>
+          <BenefitIconText>
             Підвищує імунітет та стійкість до хвороб
-          </StyledHeading3>
-        </div>
+          </BenefitIconText>
+        </BenefitItem>
 
-        <div>
-          <AbsorptionIcon />
-          <StyledHeading3>
+        <BenefitItem>
+          <BenefitIcon>
+            <AbsorptionIcon />
+          </BenefitIcon>
+          <BenefitIconText>
             Збільшує засвоєння мінерального живлення
-          </StyledHeading3>
-        </div>
+          </BenefitIconText>
+        </BenefitItem>
 
-        <div>
-          <RootSystemIcon />
-          <StyledHeading3>
+        <BenefitItem>
+          <BenefitIcon>
+            <RootSystemIcon />
+          </BenefitIcon>
+          <BenefitIconText>
             Стимулює розвиток кореневої системи
-          </StyledHeading3>
-        </div>
+          </BenefitIconText>
+        </BenefitItem>
+
       </StyledContainer>
     </PrimaryBenefits>
 
