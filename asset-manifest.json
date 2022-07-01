@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.aafc8ae4.js",
+    "main.js": "/static/js/main.e94fda1d.js",
     "static/media/sunflower.png": "/static/media/sunflower.92019b1276d2fe9dab93.png",
     "static/media/corn.png": "/static/media/corn.798a45ef3f22bb498c89.png",
     "static/media/rapeseed.png": "/static/media/rapeseed.49ae7fa015a92adb04d9.png",
     "static/media/soy.png": "/static/media/soy.781b950995dfb91b9575.png",
     "static/media/wheat.png": "/static/media/wheat.656c492e44050d3daaba.png",
+    "static/media/benefits-bg.jpg": "/static/media/benefits-bg.b3e4469a1a299795a503.jpg",
     "static/media/hero-bg.jpg": "/static/media/hero-bg.53ab15cbb74ed6e3a574.jpg",
     "static/media/montserrat-medium.woff2": "/static/media/montserrat-medium.d6bbb7c3c86aa8edcd0a.woff2",
     "static/media/mariupol-bold.woff2": "/static/media/mariupol-bold.aa144ceef0fb8cf3f3e5.woff2",
@@ -23,9 +24,9 @@
     "static/media/box.svg": "/static/media/box.98047099a18ee22a01b35a1f6e1d68b2.svg",
     "index.html": "/index.html",
     "static/media/ua-flag.svg": "/static/media/ua-flag.8cec61752c99c731b60778bd6ce079f2.svg",
-    "main.aafc8ae4.js.map": "/static/js/main.aafc8ae4.js.map"
+    "main.e94fda1d.js.map": "/static/js/main.e94fda1d.js.map"
   },
   "entrypoints": [
-    "static/js/main.aafc8ae4.js"
+    "static/js/main.e94fda1d.js"
   ]
 }
