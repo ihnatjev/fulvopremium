@@ -6,7 +6,7 @@ import StyledHeading3 from 'components/Heading3';
 
 import heroBackground from './images/hero-bg.jpg';
 import benefitsBackground from './images/benefits-bg.jpg';
-import benefitsListMarker from './images/benefits-list-marker.png'
+import benefitsListMarker from './images/benefits-list-marker.svg'
 
 import fulvoSunflower from './images/fulvo/sunflower.png';
 import fulvoRapeseed from './images/fulvo/rapeseed.png';
