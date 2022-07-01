@@ -1,7 +1,7 @@
 import { Global, css } from '@emotion/react';
 
-import MontserratMediumWoff2 from 'assets/fonts/montserrat-medium.woff2';
-import MariupolBoldWoff2 from 'assets/fonts/mariupol-bold.woff2';
+import MontserratMediumWoff2 from 'fonts/montserrat-medium.woff2';
+import MariupolBoldWoff2 from 'fonts/mariupol-bold.woff2';
 
 const GlobalFont = () => (
   <Global styles={css`

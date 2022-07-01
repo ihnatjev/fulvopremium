@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 
-import StyledContainer from './Container';
-import StyledLink from './Link';
-import StyledImage from './Image';
+import StyledContainer from 'components/Container';
+import StyledLink from 'components/Link';
+import StyledImage from 'components/Image';
 
-import brand from 'assets/images/brand.svg';
+import brand from './brand.svg';
 
 const StyledHeader = styled.header``;
 

@@ -2,10 +2,10 @@ import SEO from 'components/SEO';
 import Loader from 'components/Loader';
 import StyledLink from 'components/Link';
 
-import { ProductModel } from './models/ProductModel';
+import Product from './models/Product';
 
 const ProductList = () => {
-  const products: Array<ProductModel> = [
+  const products: Array<Product> = [
     { id: '1', name: 'Fulvo 1' },
     { id: '2', name: 'Fulvo 2' }
   ];
