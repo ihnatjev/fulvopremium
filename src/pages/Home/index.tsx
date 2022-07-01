@@ -6,7 +6,6 @@ import Container from 'components/Container';
 import heroBackground from './images/hero-bg.jpg';
 import benefitsBackground from './images/benefits-bg.jpg';
 import benefitsListMarker from './images/benefits-list-marker.svg'
-
 import aboutBackground from './images/about-bg.png';
 
 import fulvoSunflower from './images/fulvo/sunflower.png';
