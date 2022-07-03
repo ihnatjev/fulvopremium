@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 import Container from 'components/Container';
@@ -12,6 +12,11 @@ const Nav = styled.nav`
 
   a {
     margin-right: 10px;
+    text-decoration: none;
+
+    &.active {
+      color: rgb(var(--color-charcoal-rgb));
+    }
   }
 `;
 
@@ -33,10 +38,10 @@ const Header = () => (
       </BrandLink>
 
       <Nav>
-        <Link to="/">Головна</Link>
-        <Link to="/products">Продукти</Link>
-        <Link to="/about">Про нас</Link>
-        <Link to="/contact">Контакти</Link>
+        <NavLink to="/">Головна</NavLink>
+        <NavLink to="/products">Продукти</NavLink>
+        <NavLink to="/about">Про нас</NavLink>
+        <NavLink to="/contact">Контакти</NavLink>
       </Nav>
 
     </Container>

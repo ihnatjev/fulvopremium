@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 import Container from './Container';
@@ -10,6 +10,11 @@ const Nav = styled.nav`
 
   a {
     margin-right: 10px;
+    text-decoration: none;
+
+    &.active {
+      color: rgb(var(--color-charcoal-rgb));
+    }
   }
 `;
 
@@ -18,10 +23,10 @@ const Footer = () => (
     <Container>
 
       <Nav>
-        <Link to="/partners">Партнери</Link>
-        <Link to="/credit">Кредит</Link>
-        <Link to="/privacy">Конфіденційність</Link>
-        <Link to="/terms">Умови</Link>
+        <NavLink to="/partners">Партнери</NavLink>
+        <NavLink to="/credit">Кредит</NavLink>
+        <NavLink to="/privacy">Конфіденційність</NavLink>
+        <NavLink to="/terms">Умови</NavLink>
       </Nav>
 
     </Container>
