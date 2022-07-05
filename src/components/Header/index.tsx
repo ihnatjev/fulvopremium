@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 
 import Container from 'components/Container';
 
-import { ReactComponent as Brand } from './brand.svg';
-import { ReactComponent as KyivstarIcon } from './kyivstar.svg';
+import { ReactComponent as Brand } from './images/brand.svg';
+import { ReactComponent as KyivstarIcon } from './images/kyivstar.svg';
 
 const HeaderRoot = styled.header`
   padding-top: 1rem;
@@ -25,7 +25,6 @@ const BrandLink = styled(Link)`
 const BrandImage = styled(Brand)`
   height: 48px;
 `;
-
 
 const Nav = styled.nav`
   display: flex;
