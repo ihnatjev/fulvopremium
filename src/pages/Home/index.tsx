@@ -1,3 +1,4 @@
+import { useForm, SubmitHandler } from 'react-hook-form';
 import styled from '@emotion/styled';
 
 import SEO from 'components/SEO';
@@ -14,18 +15,18 @@ import fulvoWheat from './images/fulvo/wheat.png';
 import fulvoSoy from './images/fulvo/soy.png';
 import fulvoCorn from './images/fulvo/corn.png';
 
-import { ReactComponent as ResistanceIcon } from './images/icons/resistance.svg'
-import { ReactComponent as YieldIcon } from './images/icons/yield.svg'
-import { ReactComponent as GerminationIcon } from './images/icons/germination.svg'
-import { ReactComponent as ImmunityIcon } from './images/icons/immunity.svg'
-import { ReactComponent as AbsorptionIcon } from './images/icons/absorption.svg'
-import { ReactComponent as RootSystemIcon } from './images/icons/root-system.svg'
-import { ReactComponent as CertificateIcon } from './images/icons/certificate.svg'
-import { ReactComponent as DeliveryIcon } from './images/icons/delivery.svg'
-import { ReactComponent as BoxIcon } from './images/icons/box.svg'
-import { ReactComponent as VodafoneIcon } from './images/icons/vodafone.svg'
-import { ReactComponent as KyivstarIcon } from './images/icons/kyivstar.svg'
-import { ReactComponent as UaFlagIcon } from './images/icons/ua-flag.svg'
+import { ReactComponent as ResistanceIcon } from './images/icons/resistance.svg';
+import { ReactComponent as YieldIcon } from './images/icons/yield.svg';
+import { ReactComponent as GerminationIcon } from './images/icons/germination.svg';
+import { ReactComponent as ImmunityIcon } from './images/icons/immunity.svg';
+import { ReactComponent as AbsorptionIcon } from './images/icons/absorption.svg';
+import { ReactComponent as RootSystemIcon } from './images/icons/root-system.svg';
+import { ReactComponent as CertificateIcon } from './images/icons/certificate.svg';
+import { ReactComponent as DeliveryIcon } from './images/icons/delivery.svg';
+import { ReactComponent as BoxIcon } from './images/icons/box.svg';
+import { ReactComponent as VodafoneIcon } from './images/icons/vodafone.svg';
+import { ReactComponent as KyivstarIcon } from './images/icons/kyivstar.svg';
+import { ReactComponent as UaFlagIcon } from './images/icons/ua-flag.svg';
 
 /* Hero */
 const Hero = styled.section`
@@ -117,179 +118,225 @@ const AboutText = styled.div`
   }
 `;
 
-const Home = () => (
-  <>
-    <SEO title="Home" />
+/* Contact */
+const Contact = styled.section``;
 
-    <Hero>
+const ContactForm = styled.form``;
+
+
+type ContactFormInputs = {
+  firstName: string,
+  phoneNumber: string
+};
+
+const Home = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm<ContactFormInputs>();
+  const onSubmit: SubmitHandler<ContactFormInputs> = data => console.log(data);
+
+  return (
+    <>
+      <SEO title="Home" />
+
+      <Hero>
+        <Container>
+          <HeroIntro>
+            Забезпечує стабільну прибавку врожаю до 20% за будь-яких погодних умов!
+          </HeroIntro>
+          <HeroSlogan>
+            Fulvo Premium - Новинка серед добрив, яка не має аналогів.
+          </HeroSlogan>
+        </Container>
+      </Hero>
+
+      <PrimaryBenefits>
+        <Container>
+
+          <BenefitItem>
+            <BenefitIcon>
+              <ResistanceIcon />
+            </BenefitIcon>
+            <BenefitIconText>
+              Покращує морозостійкість і посухостійкість
+            </BenefitIconText>
+          </BenefitItem>
+
+          <BenefitItem>
+            <BenefitIcon>
+              <YieldIcon />
+            </BenefitIcon>
+            <BenefitIconText>
+              Збільшує врожайність і покращує якість
+            </BenefitIconText>
+          </BenefitItem>
+
+          <BenefitItem>
+            <BenefitIcon>
+              <GerminationIcon />
+            </BenefitIcon>
+            <BenefitIconText>
+              Збільшує енергію проростання та схожість насіння
+            </BenefitIconText>
+          </BenefitItem>
+
+          <BenefitItem>
+            <BenefitIcon>
+              <ImmunityIcon />
+            </BenefitIcon>
+            <BenefitIconText>
+              Підвищує імунітет та стійкість до хвороб
+            </BenefitIconText>
+          </BenefitItem>
+
+          <BenefitItem>
+            <BenefitIcon>
+              <AbsorptionIcon />
+            </BenefitIcon>
+            <BenefitIconText>
+              Збільшує засвоєння мінерального живлення
+            </BenefitIconText>
+          </BenefitItem>
+
+          <BenefitItem>
+            <BenefitIcon>
+              <RootSystemIcon />
+            </BenefitIcon>
+            <BenefitIconText>
+              Стимулює розвиток кореневої системи
+            </BenefitIconText>
+          </BenefitItem>
+
+        </Container>
+      </PrimaryBenefits>
+
+      <SecondaryBenefits>
+        <Container>
+
+          <BenefitList>
+            <BenefitListItem>
+              Створює оптимальні умови для проростання насіння
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Збільшує терміни зберігання продукції
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Покращує структуру грунту при грунтовому внесенні
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Сприяє відновленню рослини у стресових станах
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Підвищує ефективність засвоєння добрив
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Прискорює дозрівання та підвищує врожайність
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Посилює фотосинтез
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Сприяє енергетичному метаболізму
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Покращує якісні показники врожаю
+            </BenefitListItem>
+
+            <BenefitListItem>
+              Забезпечує швидке відновлення та приживлюваність рослин після пересадки
+            </BenefitListItem>
+          </BenefitList>
+
+        </Container>
+      </SecondaryBenefits>
+
+      <Effectiveness></Effectiveness>
+
+      <Characteristics></Characteristics>
+
+      <About>
+        <Container>
+
+          <AboutText>
+            <p>
+              <strong>Фульво Преміум</strong> - новітній екологічно-чистий гуміновий препарат отриманий методом екстракції бурого вугілля та являє собою комплекс біополімерів нерегулярної будови на основі солей гумінових та фульвових кислот отриманих за спеціальною технологією.
+            </p>
+            <p>
+              До складу продукту також входять, макро і мікроелементи у хелатній формі та біологічно-активні речовини, що модулюють роботу  силових станцій клітини-мітохондрій безпосередно посилюючи активність роботи ферменту АТФ синтеза, що збільшує кількість утворення молекул АТФ.
+            </p>
+          </AboutText>
+
+        </Container>
+      </About>
+
+      <Contact>
+        <Container>
+
+          <ContactForm onSubmit={handleSubmit(onSubmit)}>
+            <input
+              type="text"
+              placeholder="Як до вас звертатися?"
+              {...register('firstName', {
+                required: true
+              })}
+            />
+            {errors.firstName && <span>This field is required</span>}
+
+            <input
+              type="tel"
+              placeholder="123-456-7890"
+              {...register('phoneNumber', {
+                required: true,
+                pattern: /[0-9]{3}-[0-9]{3}-[0-9]{4}/
+              })}
+            />
+            {errors.phoneNumber && <span>This field is required</span>}
+
+            <button type="submit">Замовити дзвінок</button>
+          </ContactForm>
+
+        </Container>
+      </Contact>
+
       <Container>
-        <HeroIntro>
-          Забезпечує стабільну прибавку врожаю до 20% за будь-яких погодних умов!
-        </HeroIntro>
-        <HeroSlogan>
-          Fulvo Premium - Новинка серед добрив, яка не має аналогів.
-        </HeroSlogan>
+
+        <div>
+          <CertificateIcon />
+          <DeliveryIcon />
+          <BoxIcon />
+          <VodafoneIcon />
+          <KyivstarIcon />
+          <UaFlagIcon />
+        </div>
+
+        <div>
+          <img src={fulvoSunflower} alt="Фульво Преміум Соняшник" />
+        </div>
+
+        <div>
+          <img src={fulvoRapeseed} alt="Фульво Преміум Ріпак" />
+        </div>
+
+        <div>
+          <img src={fulvoWheat} alt="Фульво Преміум Пшениця" />
+        </div>
+
+        <div>
+          <img src={fulvoSoy} alt="Фульво Преміум Бобові" />
+        </div>
+
+        <div>
+          <img src={fulvoCorn} alt="Фульво Преміум Кукурудза" />
+        </div>
       </Container>
-    </Hero>
-
-    <PrimaryBenefits>
-      <Container>
-
-        <BenefitItem>
-          <BenefitIcon>
-            <ResistanceIcon />
-          </BenefitIcon>
-          <BenefitIconText>
-            Покращує морозостійкість і посухостійкість
-          </BenefitIconText>
-        </BenefitItem>
-
-        <BenefitItem>
-          <BenefitIcon>
-            <YieldIcon />
-          </BenefitIcon>
-          <BenefitIconText>
-            Збільшує врожайність і покращує якість
-          </BenefitIconText>
-        </BenefitItem>
-
-        <BenefitItem>
-          <BenefitIcon>
-            <GerminationIcon />
-          </BenefitIcon>
-          <BenefitIconText>
-            Збільшує енергію проростання та схожість насіння
-          </BenefitIconText>
-        </BenefitItem>
-
-        <BenefitItem>
-          <BenefitIcon>
-            <ImmunityIcon />
-          </BenefitIcon>
-          <BenefitIconText>
-            Підвищує імунітет та стійкість до хвороб
-          </BenefitIconText>
-        </BenefitItem>
-
-        <BenefitItem>
-          <BenefitIcon>
-            <AbsorptionIcon />
-          </BenefitIcon>
-          <BenefitIconText>
-            Збільшує засвоєння мінерального живлення
-          </BenefitIconText>
-        </BenefitItem>
-
-        <BenefitItem>
-          <BenefitIcon>
-            <RootSystemIcon />
-          </BenefitIcon>
-          <BenefitIconText>
-            Стимулює розвиток кореневої системи
-          </BenefitIconText>
-        </BenefitItem>
-
-      </Container>
-    </PrimaryBenefits>
-
-    <SecondaryBenefits>
-      <Container>
-
-        <BenefitList>
-          <BenefitListItem>
-            Створює оптимальні умови для проростання насіння
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Збільшує терміни зберігання продукції
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Покращує структуру грунту при грунтовому внесенні
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Сприяє відновленню рослини у стресових станах
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Підвищує ефективність засвоєння добрив
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Прискорює дозрівання та підвищує врожайність
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Посилює фотосинтез
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Сприяє енергетичному метаболізму
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Покращує якісні показники врожаю
-          </BenefitListItem>
-
-          <BenefitListItem>
-            Забезпечує швидке відновлення та приживлюваність рослин після пересадки
-          </BenefitListItem>
-        </BenefitList>
-
-      </Container>
-    </SecondaryBenefits>
-
-    <Effectiveness></Effectiveness>
-
-    <Characteristics></Characteristics>
-
-    <About>
-      <Container>
-
-        <AboutText>
-          <p>
-            <strong>Фульво Преміум</strong> - новітній екологічно-чистий гуміновий препарат отриманий методом екстракції бурого вугілля та являє собою комплекс біополімерів нерегулярної будови на основі солей гумінових та фульвових кислот отриманих за спеціальною технологією.
-          </p>
-          <p>
-            До складу продукту також входять, макро і мікроелементи у хелатній формі та біологічно-активні речовини, що модулюють роботу  силових станцій клітини-мітохондрій безпосередно посилюючи активність роботи ферменту АТФ синтеза, що збільшує кількість утворення молекул АТФ.
-          </p>
-        </AboutText>
-
-      </Container>
-    </About>
-
-    <Container>
-      <div>
-        <CertificateIcon />
-        <DeliveryIcon />
-        <BoxIcon />
-        <VodafoneIcon />
-        <KyivstarIcon />
-        <UaFlagIcon />
-      </div>
-
-      <div>
-        <img src={fulvoSunflower} alt="Фульво Преміум Соняшник" />
-      </div>
-
-      <div>
-        <img src={fulvoRapeseed} alt="Фульво Преміум Ріпак" />
-      </div>
-
-      <div>
-        <img src={fulvoWheat} alt="Фульво Преміум Пшениця" />
-      </div>
-
-      <div>
-        <img src={fulvoSoy} alt="Фульво Преміум Бобові" />
-      </div>
-
-      <div>
-        <img src={fulvoCorn} alt="Фульво Преміум Кукурудза" />
-      </div>
-    </Container>
-  </>
-);
+    </>
+  );
+}
 
 export default Home;
