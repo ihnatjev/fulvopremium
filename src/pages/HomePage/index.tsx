@@ -129,7 +129,7 @@ type ContactFormInputs = {
   phoneNumber: string
 };
 
-const Home = () => {
+const HomePage = () => {
   const { register, handleSubmit, formState: { errors } } = useForm<ContactFormInputs>();
   const onSubmit: SubmitHandler<ContactFormInputs> = data => console.log(data);
 
@@ -339,4 +339,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default HomePage;

@@ -5,15 +5,15 @@ import GlobalFont from 'GlobalFont';
 import GlobalStyle from 'GlobalStyle';
 import GlobalLayout from 'GlobalLayout';
 
-import Home from 'pages/Home';
-import Products from 'pages/Products';
-import About from 'pages/About';
-import Contact from 'pages/Contact';
-import Partners from 'pages/Partners';
-import Credit from 'pages/Credit';
-import Privacy from 'pages/Privacy';
-import Terms from 'pages/Terms';
-import NotFound from 'pages/NotFound';
+import HomePage from 'pages/HomePage';
+import ProductsPage from 'pages/ProductsPage';
+import AboutPage from 'pages/AboutPage';
+import ContactPage from 'pages/ContactPage';
+import PartnersPage from 'pages/PartnersPage';
+import CreditPage from 'pages/CreditPage';
+import PrivacyPage from 'pages/PrivacyPage';
+import TermsPage from 'pages/TermsPage';
+import NotFoundPage from 'pages/NotFoundPage';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
@@ -27,23 +27,23 @@ const App = () => (
     <Routes>
       <Route path="/" element={<GlobalLayout /> }>
 
-        <Route index element={<Home />} />
+        <Route index element={<HomePage />} />
 
-        <Route path="products/*" element={<Products />} />
+        <Route path="products/*" element={<ProductsPage />} />
 
-        <Route path="about" element={<About /> } />
+        <Route path="about" element={<AboutPage /> } />
 
-        <Route path="contact" element={<Contact /> } />
+        <Route path="contact" element={<ContactPage /> } />
 
-        <Route path="partners" element={<Partners /> } />
+        <Route path="partners" element={<PartnersPage /> } />
 
-        <Route path="credit" element={<Credit /> } />
+        <Route path="credit" element={<CreditPage /> } />
 
-        <Route path="privacy" element={<Privacy /> } />
+        <Route path="privacy" element={<PrivacyPage /> } />
 
-        <Route path="terms" element={<Terms />} />
+        <Route path="terms" element={<TermsPage />} />
 
-        <Route path='*' element={<NotFound />} />
+        <Route path='*' element={<NotFoundPage />} />
 
       </Route>
     </Routes>

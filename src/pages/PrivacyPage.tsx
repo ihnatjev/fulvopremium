@@ -1,7 +1,7 @@
 import SEO from 'components/SEO';
 import Container from 'components/Container';
 
-const Privacy = () => (
+const PrivacyPage = () => (
   <>
     <SEO title="Privacy" />
 
@@ -11,4 +11,4 @@ const Privacy = () => (
   </>
 );
 
-export default Privacy;
+export default PrivacyPage;

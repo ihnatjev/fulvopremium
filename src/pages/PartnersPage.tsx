@@ -1,7 +1,7 @@
 import SEO from 'components/SEO';
 import Container from 'components/Container';
 
-const Partners = () => (
+const PartnersPage = () => (
   <>
     <SEO title="Partners" />
 
@@ -11,4 +11,4 @@ const Partners = () => (
   </>
 );
 
-export default Partners;
+export default PartnersPage;

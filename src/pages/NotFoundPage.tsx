@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SEO from 'components/SEO';
 import Container from 'components/Container';
 
-const NotFound = () => (
+const NotFoundPage = () => (
   <>
     <SEO title="Not Found" />
 
@@ -16,4 +16,4 @@ const NotFound = () => (
   </>
 );
 
-export default NotFound;
+export default NotFoundPage;

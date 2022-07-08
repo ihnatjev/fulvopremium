@@ -1,14 +1,14 @@
 import SEO from 'components/SEO';
 import Container from 'components/Container';
 
-const Credit = () => (
+const TermsPage = () => (
   <>
-    <SEO title="Credit" />
+    <SEO title="Terms" />
 
     <Container>
-      <h2>Кредит</h2>
+      <h2>Terms</h2>
     </Container>
   </>
 );
 
-export default Credit;
+export default TermsPage;

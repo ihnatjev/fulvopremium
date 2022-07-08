@@ -1,7 +1,7 @@
 import SEO from 'components/SEO';
 import Container from 'components/Container';
 
-const Contact = () => (
+const ContactPage = () => (
   <>
     <SEO title="Contact" />
 
@@ -11,4 +11,4 @@ const Contact = () => (
   </>
 );
 
-export default Contact;
+export default ContactPage;

@@ -5,7 +5,7 @@ import Container from 'components/Container';
 import ProductList from './ProductList';
 import ProductItem from './ProductItem';
 
-const Products = () => (
+const ProductsPage = () => (
   <Container>
     <h2>Продукти</h2>
 
@@ -17,4 +17,4 @@ const Products = () => (
   </Container>
 );
 
-export default Products;
+export default ProductsPage;

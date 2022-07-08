@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SEO from 'components/SEO';
 import Loader from 'components/Loader';
 
-import Product from './models/Product';
+import Product from 'models/Product';
 
 const ProductList = () => {
   const products: Array<Product> = [
